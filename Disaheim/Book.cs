@@ -13,19 +13,16 @@ namespace Disaheim
         public string Title { get; set; }
         public double Price { get; set; }
 
-        public Book()
+      
+        public Book (string itemID) : this(itemID, "")
         {
 
         }
-        public Book (string ItemID)
+        public Book (string itemID, string title) : this(itemID, title, 0)
         {
 
         }
-        public Book (string ItemId, string Title)
-        {
-
-        }
-        public Book (string ItemID, string Title, double Price)
+        public Book (string itemID, string title, double price)
         {
 
         }

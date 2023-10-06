@@ -15,19 +15,16 @@ namespace Disaheim
         public string Design {  get; set; }
         public Level Quality {  get; set; }
 
-        public Amulet()
+        
+        public Amulet(string itemID) : this(itemID, Level.medium)
         {
 
         }
-        public Amulet(string ItemID)
+        public Amulet(string itemID, Level Quality) : this(itemID, Level.medium, "")
         {
 
         }
-        public Amulet(string ItemID, Level Quality)
-        {
-
-        }
-        public Amulet (string ItemID, Level quality, string design)
+        public Amulet (string itemID, Level quality, string design)
         {
 
         }
