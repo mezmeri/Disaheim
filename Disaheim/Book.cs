@@ -13,6 +13,10 @@ namespace Disaheim
         public string Title { get; set; }
         public double Price { get; set; }
 
+        public Book()
+        {
+
+        }
         public Book (string ItemID)
         {
 
