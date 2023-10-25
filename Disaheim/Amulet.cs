@@ -9,25 +9,22 @@ using System.Threading.Tasks;
 namespace Disaheim
 {
 
-    public class Amulet
+    public class Amulet : Merchandise
     {
-        public string ItemId { get; set; }
         public string Design {  get; set; }
         public Level Quality {  get; set; }
 
         
         public Amulet(string itemId) : this(itemId, Level.medium)
-        {
-            ItemId = itemId;  
+        {  
         }
         public Amulet(string itemId, Level quality) : this(itemId, Level.medium, "")
         {
-            ItemId = itemId;
             Quality = quality;
         }
         public Amulet (string itemId, Level quality, string design)
         {
-            ItemId= itemId;
+            ItemId = itemId;
             Quality = quality;
             Design = design;
         }

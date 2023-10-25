@@ -7,25 +7,22 @@ using System.Threading.Tasks;
 
 namespace Disaheim
 {
-    public class Book
+    public class Book : Merchandise
     {
-        public string ItemId {  get; set; }
         public string Title { get; set; }
         public double Price { get; set; }
 
       
         public Book (string itemId) : this(itemId, "")
         {
-            ItemId = itemId;
         }
         public Book (string itemId, string title) : this(itemId, title, 0)
         {
-            ItemId = itemId;
             Title = title;
         }
         public Book (string itemId, string title, double price)
         {
-            ItemId= itemId;
+            ItemId = itemId;
             Title = title;
             Price = price;
         }
