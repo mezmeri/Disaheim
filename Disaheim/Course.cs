@@ -17,7 +17,6 @@ namespace Disaheim
         }
         public Course(string name) : this(name, 0)
         {
-
         }
 
         public override string ToString()
